@@ -29,7 +29,7 @@
         margin: 0 auto;
     	display:flex;
     	flex-direction: row;
-        border-bottom: 3px solid black;
+        border-bottom: 2px solid black;
     	width: 980px;
     }
     a.menu_text:hover, a.menu_text:active {
@@ -40,6 +40,9 @@
   	 	display: inline-block;
   	 	box-shadow: 0 3px 0 #000 inset;
     }
+    #hometext {
+    box-shadow: 0 3px 0 #000 inset;
+    }
     .menu_text {
     	Color: black;
     	padding: 5px 5px;
@@ -49,16 +52,6 @@
         font-size: 1.3em;
     	font-family: sans-serif;
     	text-align: center;
-    }
-    #footer {
-    	width: 980px;
-        align-items: center;
-    	background-color: e8eaec;
-        margin: 0 auto;
-        display: flex;
-        flex-grow: 1;
-  	    justify-content: center
-        border: 2px solid black;
     }
     #iconwrap {
     width: 5%; /*or whatever you choose*/
@@ -71,7 +64,9 @@
     background-color: #e8eaec;
     margin: 0 auto;
     flex-direction: row;
-    border: 3px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
     }
     #rheatextdiv {
     display: flex;
@@ -96,11 +91,22 @@
   	.icon {
     width: 50px;
     }
+        #footer {
+    	width: 980px;
+        align-items: center;
+    	background-color: e8eaec;
+        margin: 0 auto;
+        display: flex;
+        flex-grow: 1;
+  	    justify-content: center
+        border: 2px solid black;
+        z-index: 1;
+    }
        </style> </head>
     <body>
       <div id ="header"><img src="https://static.wixstatic.com/media/5c394c_cca35f0a171e4120ba55a02c8ef7d710~mv2.png/v1/fill/w_1538,h_294,al_c,q_90,usm_0.66_1.00_0.01/headerskinny.webp" width ="980px"></div>
        <div id="menu">
-  <a class="menu_text" href="rheannasalazar.com">Home</a>
+  <a class="menu_text" id ="hometext" href="rheannasalazar.com">Home</a>
   <a class ="menu_text" href="rheannasalazar.com">News</a>
   <a class ="menu_text" href="https://www.rheannasalazar.com/resume">Reel/Resume</a>
   <a class ="menu_text" href="https://www.rheannasalazar.com/photos">Gallery</a>
